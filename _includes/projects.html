@@ -1,21 +1,9 @@
 <div class="user-details">
   <h1>Featured Projects</h1>
 </div>
-
+<img src="{{ "/assets/img/main.png" | prepend: site.baseurl }}" style="width:
+100%" />
 <div class="user-projects">
-  <!-- <div class="images-right">
-    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">
-      &#10094;
-    </button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">
-      &#10095;
-    </button>
-    <img class="mySlides" src="{{ "/assets/img/kmooc_img.png" | prepend:
-    site.baseurl }}" style="width: 100%" /> <img class="mySlides" src="{{
-    "/assets/img/kmooc_img2.png" | prepend: site.baseurl }}" style="width: 100%"
-    />
-  </div> -->
-
   <div class="images-right">
     <div style="min-height: 400px">
       <div class="mySlides fade">
@@ -125,10 +113,84 @@
     </ul>
   </div>
 </div>
+
+<div class="user-projects" style="margin-top: 3rem">
+  <div class="images-right">
+    <div style="min-height: 400px">
+      <div class="mySlides3 fade">
+        <img src="{{ "/assets/img/11.png" | prepend: site.baseurl }}"
+        style="width: 100%;" />
+      </div>
+
+      <div class="mySlides3 fade">
+        <img src="{{ "/assets/img/22.png" | prepend: site.baseurl }}"
+        style="width: 100%" />
+      </div>
+      <div class="mySlides3 fade">
+        <img src="{{ "/assets/img/33.png" | prepend: site.baseurl }}"
+        style="width: 100%" />
+      </div>
+
+      <div class="mySlides3 fade">
+        <img src="{{ "/assets/img/44.png" | prepend: site.baseurl }}"
+        style="width: 100%" />
+      </div>
+      <div class="mySlides3 fade">
+        <img src="{{ "/assets/img/55.png" | prepend: site.baseurl }}"
+        style="width: 100%" />
+      </div>
+
+      <div class="mySlides3 fade">
+        <img src="{{ "/assets/img/66.png" | prepend: site.baseurl }}"
+        style="width: 100%" />
+      </div>
+      <div class="mySlides3 fade">
+        <img src="{{ "/assets/img/77.png" | prepend: site.baseurl }}"
+        style="width: 100%" />
+      </div>
+
+      <div class="mySlides3 fade">
+        <img src="{{ "/assets/img/88.png" | prepend: site.baseurl }}"
+        style="width: 100%" />
+      </div>
+    </div>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1,3)"></span>
+      <span class="dot" onclick="currentSlide(2,3)"></span>
+      <span class="dot" onclick="currentSlide(3,3)"></span>
+      <span class="dot" onclick="currentSlide(4,3)"></span>
+      <span class="dot" onclick="currentSlide(5,3)"></span>
+      <span class="dot" onclick="currentSlide(6,3)"></span>
+      <span class="dot" onclick="currentSlide(7,3)"></span>
+      <span class="dot" onclick="currentSlide(8,3)"></span>
+    </div>
+  </div>
+
+  <div class="contents">
+    <h3>수질예측시스템</h3>
+    <ul>
+      <li>
+        수질예측시스템<br />
+        Web 1인 개발
+      </li>
+      <p>
+        - 머신러닝 엔진 부분을 웹서버에 올려 사용자가 데이터변환 등 을 해가며
+        예측할 수 있도록 웹개발
+      </p>
+      <p>차트, 예측지점 지도표시(kakaomap) custom,datepicker, up-download</p>
+
+      <p>pandas / numpy</p>
+
+      <p>python django web framework</p>
+    </ul>
+  </div>
+</div>
+
 <script>
   var slideIndex = 1;
   showSlides(slideIndex, 1);
   showSlides(slideIndex, 2);
+  showSlides(slideIndex, 3);
 
   function plusSlides(n) {
     showSlides((slideIndex += n));
@@ -144,10 +206,12 @@
     var i;
     var slides = "";
 
-    if (x == 2) {
-      slides = document.getElementsByClassName("mySlides2");
-    } else {
+    if (x == 1) {
       slides = document.getElementsByClassName("mySlides");
+    } else if (x == 2) {
+      slides = document.getElementsByClassName("mySlides2");
+    } else if (x == 3) {
+      slides = document.getElementsByClassName("mySlides3");
     }
 
     var dots = document.getElementsByClassName("dot");
