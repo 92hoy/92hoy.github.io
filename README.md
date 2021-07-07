@@ -32,18 +32,19 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://localhost:3000" # the base hostname & protocol for your site
 
 # User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Anon Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
+username: Jo Hoyoung
+user_description: Web Developer [Python, Django, Vue, Mysql ... fullstack]
+user_title: Web Developer
+email: ho_9209@naver.com
+twitter_username: none
+github_username: 92hoy
+gplus_username: hoy9209
 ```
 
 **Don't forget to change your url before you deploy your site!**
 
 ## Color and Particle Customization
+
 - Color Customization
   - Edit the sass variables
 - Particle Customization
@@ -71,5 +72,6 @@ This theme is free and open source software, distributed under the The MIT Licen
 ## Credits
 
 This theme was partially designed with the inspiration from these fine folks
+
 - [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
 - [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
